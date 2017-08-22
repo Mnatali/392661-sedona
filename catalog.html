@@ -9,41 +9,42 @@
 
 <body>
 	<div class="header">
-	<img class="main-logo" src="img/logo.png" alt="Логотип &quot;Седона&quot;" width="" height="">
+		<a class="header-logo" href="index.html"><img src="img/logo-sedona.png" width="" height="" alt="Logo Sedona"></a>
 		<div class="navigation">
 			<ul class="site-navigation">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+				<li class="navigation-item"><a href="#">Информация</a>
+					<li class="navigation-item"><a href="#">Фото и видео</a></li>
+					<li class="navigation-item"><a href="#">Карта штата</a></li>
+					<li class="navigation-item opened"><a href="#">Гостиницы</a></li>
 			</ul>
 		</div>
 	</div>
-		<div class="container">
-			<div class="search-filter">
-				<form action="https://echo.htmlacademy.ru" method="post">
+	<!-- Контейнер. Форма для фильтра. -->
+	<div class="container">
+		<div class="search-filter">
+			<form class="filter" action="https://echo.htmlacademy.ru" method="post">
 				<fieldset>
 					<legend>Инфраструктура:</legend>
-					<ul>
+					<ul class="filter-list">
 						<li class="filter-option">
-							<input class="filter-input filter-input-checkbox "id="pool" type="checkbox" name="pool" checked>
+							<input class="filter-input filter-input-checkbox " id="pool" type="checkbox" name="pool" checked>
 							<label for="pool">Бассейн</label>
 						</li>
 						<li class="filter-option">
-							<input class="filter-input filter-input-checkbox "id="parking" type="checkbox" name="parking">
+							<input class="filter-input filter-input-checkbox " id="parking" type="checkbox" name="parking">
 							<label for="parking">Парковка</label>
 						</li>
 						<li class="filter-option">
-							<input class="filter-input filter-input-checkbox "id="Wi-Fi" type="checkbox" name="Wi-Fi">
+							<input class="filter-input filter-input-checkbox " id="Wi-Fi" type="checkbox" name="Wi-Fi">
 							<label for="Wi-Fi">Wi-Fi</label>
 						</li>
 					</ul>
 				</fieldset>
 				<fieldset>
 					<legend>Тип жилья:</legend>
-					<ul>
+					<ul class="filter-list">
 						<li class="filter-option">
-							<input class="filter-input filter-input-checkbox "id="hotel" type="checkbox" name="hotel" checked>
+							<input class="filter-input filter-input-checkbox " id="hotel" type="checkbox" name="hotel" checked>
 							<label for="hotel">Гостиница</label>
 						</li>
 						<li class="filter-option">
@@ -59,32 +60,36 @@
 				<fieldset>
 					<legend>Стоимость в сутки</legend>
 					<input class="filter-input filter-input-text " type="text" name="cost" placeholder="от 0 до 3000">
-				</fieldset>
 					<input type="submit" name="submit-form" class="filter-button" value="Показать">
+				</fieldset>
 			</form>
 		</div>
+		<!-- Сортировка. -->
 		<div class="search-line">
 			<p>Найдено:3</p>
 			<ul class="search-line-list">
 				<li class="list-sorting">Сортировка:</li>
-				<li><a href="#">По цене</a></li>
-				<li><a href="#">По типу</a></li>
-				<li><a href="#">По рейтингу</a></li>
+				<li class=""><a href="#">По цене</a></li> <!-- класс нужен? -->
+				<li class=""><a href="#">По типу</a></li>
+				<li class=""><a href="#">По рейтингу</a></li>
 			</ul>
 		</div>
-
+<!-- Список отелей. -->
 		<div class="hotel-list">
-			<img src="http://placehold.it/150x100">
+	  <!-- Заголовкам назначать класс? -->
+		  <img src="http://placehold.it/150x100">
 			<h2>Amara Resort &amp; Spa</h2>
 			<ul class="hotel-list-info">
-				<li class="hotel-list-type">Гостиница</li>					<li class="hotel-list-cost">От 4000 р.</li>
+				<li class="hotel-list-type">Гостиница</li>
+				<li class="hotel-list-cost">От 4000 р.</li>
 			</ul>
 			<a class="link link-detailed" href="#">Подробнее</a>
-			<a class="link link-reservation" href="#">Забронировать</a>		<p class="list-rating">Рейтинг:8,5</p>
+			<a class="link link-reservation" href="#">Забронировать</a>
+			<p class="list-rating">Рейтинг:8,5</p>
 		</div>
 
 		<div class="hotel-list">
-			<img src="http://placehold.it/150x100">
+		<!-- Заголовкам назначать класс? -->
 			<h2>Desert Quail Inn</h2>
 			<img src="http://placehold.it/150x100">
 			<ul class="hotel-list-info">
@@ -97,6 +102,7 @@
 		</div>
 
 		<div class="hotel-list">
+		<!-- Заголовкам назначать класс? -->
 			<h2>Villas at Poco Diablo</h2>
 			<img src="http://placehold.it/150x100">
 			<ul class="hotel-list-info">
@@ -104,23 +110,25 @@
 				<li class="hotel-list-cost">От 2000 р.</li>
 			</ul>
 			<a class="link link-detailed" href="#">Подробнее</a>
-		    <a class="link link-reservation" href="#">Забронировать</a>
+			<a class="link link-reservation" href="#">Забронировать</a>
 			<p class="list-rating">Рейтинг:9,2</p>
 		</div>
 	</div>
 	<div class="footer">
 		<span class="footer-info">#visitsedona</span>
-		<div class="footer-social">
-			<ul>
-				<li><a class="cocial-link" href="https://vk.com/">Вконтакте</a></li>
-				<li><a class="cocial-link" href="https://ru-ru.facebook.com">Фейсбук</a></li>
-				<li><a class="cocial-link" href="https://www.youtube.com">Ютуб</a></li>
+	  <div class="footer-social">
+			<ul class="social-list">
+				<li class="social-item"><a class="social-button" href="#">Вконтакте</a></li>
+				<li class="social-item"><a class="social-button"
+						href="#">Фейсбук</a></li>
+				<li class="social-item"><a class="social-button" href="#">Ютуб</a></li>
 			</ul>
 		</div>
-		<p class="copyright">
+		<div class="copyright">
 			Website by
-			<a class="copyright-logo" href="https://htmlacademy.ru"><img src="/img/logo-htmlacademy.svg" alt="Логотип HTML академии" width="" height=""></a>
-		</p>
+			<a class="copyright-logo" href="https://htmlacademy.ru"><img src="img/svg-sedona/logo-htmlacademy.svg" width="" height="" alt="HTML academy"></a>
+		</div>
 	</div>
+		
 </body>
 </html>
