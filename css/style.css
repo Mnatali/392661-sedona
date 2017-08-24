@@ -1,0 +1,26 @@
+body {
+	font-size: 18px;
+	line-height: 21px;
+	color: black;
+	font-weight: normal;
+	font-family: "PT Sans", sans-serif;
+}
+.title {
+		font-size: 21px;
+		line-height: 21px;
+		font-weight: bold;
+		text-align: center;
+		color: #000000;
+		text-transform: uppercase;
+}
+
+.title-promo {
+		font-size: 30px;
+		line-height: 33px;
+		text-align: center;
+}
+
+.title-search {
+		font-size: 30px;
+		line-height: 36px;
+}
