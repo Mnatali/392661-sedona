@@ -11,10 +11,10 @@
 		<a class="header-logo" href="index.html"><img class="main-logo" src="img/logo.png" alt="Логотип &quot;Седона&quot;" width="138" height="70"></a>
 		<div class="navigation">
 			<ul class="site-navigation">
-				<li class="navigation-item"><a href="#">Информация</a>
-				<li class="navigation-item"><a href="#">Фото и видео</a></li>
-				<li class="navigation-item"><a href="#">Карта штата</a></li>
-				<li class="navigation-item opened"><a href="#">Гостиницы</a></li>
+				<li class="navigation-item"><a href="info.html">Информация</a></li>
+				<li class="navigation-item"><a href="gellery.html">Фото и видео</a></li>
+				<li class="navigation-item"><a href="map.html">Карта штата</a></li>
+				<li class="navigation-item opened"><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</div>
 	</div>
@@ -25,7 +25,7 @@
 		<!--Возможно, надпись на баннере явл.<h1>?-->
 		<h1 class="title title-promo visuallyhidden">Добро пожаловать в Седону!</h1>
 		<!--А для этого заголовка <h1> больше подходит тег<p>?-->
-			<p class="promo">Седона — небольшой городок в Аризоне                Заслуживающий большего!</p>
+			<p class="promo">Седона — небольшой городок в Аризоне,                Заслуживающий большего!</p>
 			<p class="promo-teхt">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
 		</div>
 		<!-- Преимущество №1. -->
@@ -33,7 +33,7 @@
 			<h2 class="title">Настоящий городок</h2>
 			<span class="number">— №1 —</span> <!--абзац переделала на <span> -->
 			<p class="promo-teхt">Седона — не аттракцион для туристов, там течет своя жизнь</p>
-			<img class="features-first-img" src="img/advantages-1.jpg" alt="панорама" width="800" height="256">
+			<img class="advantages-first-img" src="img/advantages-1.jpg" alt="панорама" width="800" height="256">
 		</div>
 		<!-- Преимущества-советы. -->
 		<div class="advantages-advice">
@@ -54,7 +54,7 @@
 		</div>
 		<!-- Преимущество №2. -->
 		<div class="advantages-second">
-			<img class="features-first-img" src="img/advantages-2.jpg" alt="Вид на горный массив" width="800" height="256">
+			<img class="advantages-second-img" src="img/advantages-2.jpg" alt="Вид на горный массив" width="800" height="256">
 			<h2 class="title">Там есть Мост дьявола</h2>
 			<span class="number">— №2 —</span>
 			<p class="promo-teхt"> Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -90,34 +90,29 @@
 				<button class="button search-button">Поиск гостиницы в Седоне</button>
 			<!--Заявка. -->
 			<h2 class="title visuallyhidden">Форма бронирования</h2>
-			<form action="https://echo.htmlacademy.ru" method="post" class="search-form">
+			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="search-item">
 					<label for="arrival-date">Дата заезда</label>
 					<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required>
 				</div>
 				<!-- Блок №2. Дата выезда. -->
 				<div class="search-item">
-				
 					<label for="date-of-departure">Дата выезда</label>
 					<input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017" required>
 				</div>
 				<!-- Блок №3. Количество регестрируемых. -->
-				<div class="search-item">
+				<div class="search-items">
 					<div class="search-section">
-						<label for="adults">Взрослые</label>
-						<div class="search-branch">
-							<button class="branch-button" type="button">-</button>
-							<input type="text" name="adults" id="adults" min="0" max="666" placeholder="2" required>
-							<button class="branch-button" type="button">+</button>
-						</div>
-					</div>
+						<label for="adults">Взрослые:</label>
+						<input type="button" name="push-minus" value="-">
+						<input type="text" name="adults" id="adults" placeholder="2">
+						<input type="button" name="push-plus"  value="+">
+					</div><!--C кнопками разобраться!!! -->
 					<div class="search-section">
 						<label for="children">Дети</label>
-						<div class="search-branch">
-							<button class="branch-button" type="button">-</button>
-							<input type="text" name="children" id="children" min="0" max="666" placeholder="0" required>
-							<button class="branch-button" type="button">+</button>
-						</div>
+						<input type="button" name="push-minus" value="-">
+						<input type="text" name="children" id="children" placeholder="0">
+						<input type="button" name="push-plus"  value="+">
 					</div>
 				</div>
 				<button class="item-button" type="submit">Найти</button>
@@ -126,8 +121,7 @@
 		<!--Контейнер. Карта. -->
 		<div class="map">
 			<h2 class="title visuallyhidden">Карта</h2>
-			<img src="img/map_index.jpg" alt="Карта проезда" width="1200" height="539">
-			
+			<img src="img/map_index.jpg" alt="Карта штата" width="1200" height="539">
 		</div>
 <!-- Подвал. Cоц. раздел. -->
 		<div class="footer">

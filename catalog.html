@@ -12,10 +12,10 @@
 		<a class="header-logo" href="index.html"><img class="main-logo" src="img/logo.png" alt="Логотип &quot;Седона&quot;" width="138" height="70"></a>
 		<div class="navigation">
 			<ul class="site-navigation">
-				<li class="navigation-item"><a href="#">Информация</a>
-				<li class="navigation-item"><a href="#">Фото и видео</a></li>
-				<li class="navigation-item"><a href="#">Карта штата</a></li>
-				<li class="navigation-item opened"><a href="#">Гостиницы</a></li>
+				<li class="navigation-item"><a href="info.html">Информация</a></li>
+				<li class="navigation-item"><a href="gellery.html">Фото и видео</a></li>
+				<li class="navigation-item"><a href="map.html">Карта штата</a></li>
+				<li class="navigation-item opened"><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</div>
 	</div>
@@ -60,7 +60,7 @@
 				<fieldset>
 					<legend>Стоимость в сутки</legend>
 					<input class="filter-input filter-input-text " type="text" name="cost" placeholder="от 0 до 3000">
-					<input type="submit" name="submit-form" class="filter-button" value="Показать">
+					<button class="filter-button" type="submit">Показать</button>
 				</fieldset>
 			</form>
 		</div>
@@ -69,17 +69,20 @@
 			<p>Найдено:3</p>
 			<ul class="search-line-list">
 				<li class="list-sorting">Сортировка:</li>
-				<li class=""><a href="#">По цене</a></li>
-				<!-- класс нужен? -->
-				<li class=""><a href="#">По типу</a></li>
-				<li class=""><a href="#">По рейтингу</a></li>
+				<li><a href="prise.html">По цене</a></li>
+				<li><a href="type.html">По типу</a></li>
+				<li><a href="reiting.html">По рейтингу</a></li>
 			</ul>
+			<button class="btn btn-top">Прокрутитить вверх</button>
+			<button class="btn btn-bottom">Прокрутитить вниз</button>
 		</div>
 		<!-- Список отелей. -->
 		<div class="hotel-list">
-			<!-- вставить ссылку? -->
+			<h2 class="visuallyhidden title">Amara Resort</h2>
+			<p>
+				<a class="subtitle-link" href="amara.html">Amara Resort &amp; Spa</a>
+			</p>
 			<img src="img/Amara_resort.jpg" alt="Гостиница Amara Resort &amp; Spa" width="135" height="90">
-			<p>Amara Resort &amp; Spa</p>
 			<ul class="hotel-list-info">
 				<li class="hotel-list-type">Гостиница</li>
 				<li class="hotel-list-cost">От 4000 р.</li>
@@ -90,8 +93,10 @@
 		</div>
 
 		<div class="hotel-list">
-			<!-- вставить ссылку? -->
-			<p>Desert Quail Inn</p>
+			<h2 class="visuallyhidden title">Desert Quail Inn</h2>
+			<p>
+				<a class="subtitle-link"  href="desert.html">Desert Quail Inn</a>
+			</p>
 			<img src="img/desert%20quail.jpg" alt="Отель Desert Quail Inn" width="135" height="90">
 			<ul class="hotel-list-info">
 				<li class="hotel-list-type">Отель</li>
@@ -103,8 +108,10 @@
 		</div>
 
 		<div class="hotel-list">
-			<!-- вставить ссылку? -->
-			<p>Villas at Poco Diablo</p>
+			<h2 class="visuallyhidden title">Villas at Poco Diablo</h2>
+			<p>
+				<a class="subtitle-link"  href="villas.html">Villas at Poco Diablo</a>
+			</p>
 			<img src="img/villas.jpg" alt="Апартаменты Villas at Poco Diablo" width="135" height="90">
 			<ul class="hotel-list-info">
 				<li class="hotel-list-type">Апартаменты</li>
@@ -126,7 +133,7 @@
 		</div>
 		<div class="copyright">
 			Website by
-			<a class="copyright-logo" href="https://htmlacademy.ru"><img src="img/svg-sedona/logo-htmlacademy.svg" width="" height="" alt="HTML academy"></a>
+			<a class="copyright-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy"></a>
 		</div>
 	</div>
 
