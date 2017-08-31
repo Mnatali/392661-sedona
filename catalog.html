@@ -4,25 +4,29 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="header">
-		<a class="header-logo" href="index.html"><img class="main-logo" src="img/logo.png" alt="Логотип &quot;Седона&quot;" width="138" height="70"></a>
 		<div class="navigation">
+			<a class="header-logo" href="index.html">
+				<img class="main-logo" src="img/logo.png" alt="Логотип &quot;Седона&quot;" width="138" height="70">
+			</a>
 			<ul class="site-navigation">
-				<li class="navigation-item"><a href="info.html">Информация</a></li>
-				<li class="navigation-item"><a href="gellery.html">Фото и видео</a></li>
-				<li class="navigation-item"><a href="map.html">Карта штата</a></li>
-				<li class="navigation-item opened"><a href="catalog.html">Гостиницы</a></li>
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="gellery.html">Фото и видео</a></li>
+				<li><a href="map.html">Карта штата</a></li>
+				<li class="site-navigation-active"><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</div>
 	</div>
 	<!-- Контейнер. Форма для фильтра. -->
 	<div class="container">
-		<div class="search-filter">
-			<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+		<div class="filters">
+			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 				<fieldset>
 					<legend>Инфраструктура:</legend>
 					<ul class="filter-list">
@@ -57,21 +61,28 @@
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset>
-					<legend>Стоимость в сутки</legend>
-					<input class="filter-input filter-input-text " type="text" name="cost" placeholder="от 0 до 3000">
-					<button class="filter-button" type="submit">Показать</button>
-				</fieldset>
+				<div class="range-filter">
+					<p>Стоимость в сутки (р):</p>
+					<div class="price-controls">
+						<label for="min-price">от</label>
+						<input class="min-price" type="text" id="min-price" value="0">
+						<label for="max-price">до</label>
+						<input class="max-price" type="text" id="max-price" value="3000">
+					</div>
+
+				</div>
+
+				<button type="submit" class="filter-button">Показать</button>
 			</form>
 		</div>
 		<!-- Сортировка. -->
-		<div class="search-line">
-			<p>Найдено:3</p>
-			<ul class="search-line-list">
-				<li class="list-sorting">Сортировка:</li>
-				<li><a href="prise.html">По цене</a></li>
-				<li><a href="type.html">По типу</a></li>
-				<li><a href="reiting.html">По рейтингу</a></li>
+		<div class="result">
+			<h2 class="result-title">Найдено: 3</h2>
+			<h3>Сортировка:</h3>
+			<ul class="sorting">
+				<li><a class="sorting-price" href="#">По цене</a></li>
+				<li><a class="sorting-type-rating" href="#">По типу</a></li>
+				<li><a class="sorting-type-rating" href="#">По рейтингу</a></li>
 			</ul>
 			<button class="btn btn-top">Прокрутитить вверх</button>
 			<button class="btn btn-bottom">Прокрутитить вниз</button>
@@ -87,38 +98,38 @@
 				<li class="hotel-list-type">Гостиница</li>
 				<li class="hotel-list-cost">От 4000 р.</li>
 			</ul>
-			<a class="link link-detailed" href="#">Подробнее</a>
-			<a class="link link-reservation" href="#">Забронировать</a>
+			<a class="button-detailed" href="#">Подробнее</a>
+			<a class="button-reservation" href="#">Забронировать</a>
 			<p class="list-rating">Рейтинг:8,5</p>
 		</div>
 
 		<div class="hotel-list">
 			<h2 class="visuallyhidden title">Desert Quail Inn</h2>
 			<p>
-				<a class="subtitle-link"  href="desert.html">Desert Quail Inn</a>
+				<a class="subtitle-link" href="desert.html">Desert Quail Inn</a>
 			</p>
 			<img src="img/desert%20quail.jpg" alt="Отель Desert Quail Inn" width="135" height="90">
 			<ul class="hotel-list-info">
 				<li class="hotel-list-type">Отель</li>
 				<li class="hotel-list-cost">От 3000 р.</li>
 			</ul>
-			<a class="link link-detailed" href="#">Подробнее</a>
-			<a class="link link-reservation" href="#">Забронировать</a>
+			<a class="button-detailed" href="#">Подробнее</a>
+			<a class="button-reservation" href="#">Забронировать</a>
 			<p class="list-rating">Рейтинг:8,9</p>
 		</div>
 
 		<div class="hotel-list">
 			<h2 class="visuallyhidden title">Villas at Poco Diablo</h2>
 			<p>
-				<a class="subtitle-link"  href="villas.html">Villas at Poco Diablo</a>
+				<a class="subtitle-link" href="villas.html">Villas at Poco Diablo</a>
 			</p>
 			<img src="img/villas.jpg" alt="Апартаменты Villas at Poco Diablo" width="135" height="90">
 			<ul class="hotel-list-info">
 				<li class="hotel-list-type">Апартаменты</li>
 				<li class="hotel-list-cost">От 2000 р.</li>
 			</ul>
-			<a class="link link-detailed" href="#">Подробнее</a>
-			<a class="link link-reservation" href="#">Забронировать</a>
+			<a class="button-detailed" href="#">Подробнее</a>
+			<a class="button-reservation" href="#">Забронировать</a>
 			<p class="list-rating">Рейтинг:9,2</p>
 		</div>
 	</div>
@@ -126,9 +137,9 @@
 		<span class="footer-info">#visitsedona</span>
 		<div class="footer-social">
 			<ul class="social-list">
-				<li class="social-item"><a class="social-button" href="https://vk.com/">Вконтакте</a></li>
-				<li class="social-item"><a class="social-button" href="https://ru-ru.facebook.com">Фейсбук</a></li>
-				<li class="social-item"><a class="social-button" href="https://www.youtube.com">Ютуб</a></li>
+				<li><a class="social-button" href="https://vk.com/">Вконтакте</a></li>
+				<li><a class="social-button" href="https://ru-ru.facebook.com">Фейсбук</a></li>
+				<li><a class="social-button" href="https://www.youtube.com">Ютуб</a></li>
 			</ul>
 		</div>
 		<div class="copyright">

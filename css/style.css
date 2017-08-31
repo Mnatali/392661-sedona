@@ -1,26 +1,324 @@
 body {
-	font-size: 18px;
-	line-height: 21px;
-	color: black;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	/*гарнитура (название шрифта)*/
+	font-size: 14px;
+	/*размер шрифта*/
+	line-height: 26px;
+	/*высота строки 1.238*/
 	font-weight: normal;
-	font-family: "PT Sans", sans-serif;
+	/*жирность шрифта*/
+	color: rgb(51, 51, 51);
+	/*цвет шрифта*/
+	text-transform: uppercase;
+	background-color: rgb(255, 255, 255);
 }
-.title {
-		font-size: 21px;
-		line-height: 21px;
-		font-weight: bold;
-		text-align: center;
-		color: #000000;
-		text-transform: uppercase;
+a {
+	text-decoration: none;
+}
+.navigation {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(255, 255, 255);
+}
+.site-navigation {
+	list-style: none;
+}
+.site-navigation a {
+	color: rgb(51, 51, 51);
+}
+.site-navigation a:hover {
+	color: rgb(129, 179, 210);
+}
+.site-navigation a:active {
+	color: rgba(0, 0, 0, 0.302);
 }
 
-.title-promo {
-		font-size: 30px;
-		line-height: 33px;
-		text-align: center;
+/*блок преимущества*/
+
+.invitation-advantages {
+	text-align: center;
+}
+.invitation-advantages h2 {
+	font-size: 21px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+.invitation-advantages p {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	text-align: center;
 }
 
-.title-search {
-		font-size: 30px;
-		line-height: 36px;
+/*блок причины №1, 2*/
+
+.background-blue {
+	background-color: rgb(129, 179, 210);
+	text-align: center;
+}
+.background-blue h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+}
+.background-blue span,
+.background-blue p {
+	color: rgb(255, 255, 255);
+}
+
+/*блок жилье еда сувениры*/
+
+.advice-list {
+	list-style: none;
+}
+.advice-item {
+	text-align: center;
+}
+.advice-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+
+/*блок причины 3, 4, 5*/
+
+.background-gray {
+	background-color: rgb(238, 238, 238);
+}
+
+/*блок поиск*/
+
+.search {
+	text-align: center;
+}
+.search h2 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: rgb(0, 0, 0);
+}
+.search a {
+	font-size: 21px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	vertical-align: middle;
+	background-color: rgb(118, 99, 87);
+	border: none;
+}
+.search a:hover {
+	background-color: rgb(96, 78, 67);
+}
+.search a:active {
+	color: rgba(255, 255, 255, 0.302);
+	background-color: rgb(80, 62, 51);
+}
+.search label {
+	line-height: 1.857;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+.search-data input[type="text"] {
+	line-height: 1.857;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	background-color: rgb(242, 242, 242);
+	border: none;
+}
+.search-data input[type="text"]:hover {
+	background-color: rgb(235, 235, 235);
+}
+.search-data input[type="text"]:focus {
+	background-color: transparent;
+	border: 2px solid rgb(229, 229, 229);
+	outline: none;
+}
+.search-people input[type="text"] {
+	color: rgb(0, 0, 0);
+	line-height: 1.857;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: rgb(242, 242, 242);
+	border: none;
+	outline: none;
+}
+.button {
+	font-size: 21px;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	vertical-align: middle;
+	line-height: 1.2;
+	background-color: rgb(129, 179, 210);
+	border: none;
+}
+.button:hover {
+	background-color: rgb(102, 158, 192);
+}
+.button:active {
+	color: rgba(255, 255, 255, 0.302);
+	background-color: rgb(84, 150, 189);
+}
+
+/*подвал*/
+
+.footer {
+	color: rgb(255, 255, 255);
+}
+.footer-info {
+	color: rgb(0, 0, 0);
+	font-size: 21px;
+	font-weight: bold;
+}
+.footer-social ul {
+	list-style: none;
+}
+.social-list {
+	text-align: center;
+}
+.social-button {
+	color: rgb(255, 255, 255);
+}
+.copyright {
+	text-align: center;
+}
+.copyright a {
+	color: rgb(0, 0, 0);
+}
+
+/*стр. каталог блок фильтры*/
+
+.site-navigation-active a {
+	color: rgb(118, 99, 87);
+}
+.site-navigation-active a:hover,
+.site-navigation-active a:focus,
+.site-navigation-active a:active {
+	color: rgb(118, 99, 87);
+}
+.filters {
+	color: rgb(255, 255, 255);
+	background-color: rgb(105, 135, 165);
+	background-image: url("../img/Background.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+.filter fieldset {
+	border: none;
+}
+.filter legend {
+	font-size: 16px;
+	line-height: 1.313;
+	font-weight: bold;
+}
+.filter ul {
+	list-style: none;
+	line-height: 21px;
+}
+.filter-button {
+	color: rgb(255, 255, 255);
+	line-height: 1.5;
+	background-color: transparent;
+	border: 2px solid rgb(229, 229, 229);
+	text-transform: uppercase;
+	outline: none;
+}
+.filter-button:hover {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+.price-controls input[type="text"] {
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+	border: none;
+}
+.price-controls {
+	border: 2px solid rgb(255, 255, 255);
+}
+.result h2 {
+	font-size: 21px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+.result h3 {
+	font-size: 12px;
+	color: rgb(0, 0, 0);
+	line-height: 1.5;
+}
+.sorting {
+	list-style: none;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.sorting-price a{
+	color: rgb(129, 179, 210);
+}
+.sorting-type-rating a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.302);
+	border-bottom: 0.8px dashed rgb(129, 179, 210);
+}
+.sorting-type-rating a:hover {
+	text-decoration: none;
+	color: rgb(129, 179, 210);
+	border-bottom: 0.8px dashed rgb(129, 179, 210);
+}
+.sorting-type-rating a:active {
+	color: rgb(0, 0, 0);
+	border-bottom: none;
+}
+.button-detailed a {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.5;
+	vertical-align: middle;
+	background-color: rgb(129, 179, 210);
+	border: none;
+}
+.button-detailed a:hover {
+	background-color: rgb(102, 158, 192);
+}
+.button-detailed a:active {
+	color: rgba(255, 255, 255, 0.302);
+	background-color: rgb(84, 150, 189);
+}
+.button-reservation a {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.5;
+	vertical-align: middle;
+	background-color: rgb(118, 99, 87);
+	border: none;
+}
+.button-reservation a:hover {
+	background-color: rgb(96, 78, 67);
+}
+.button-reservation a:active {
+	color: rgba(255, 255, 255, 0.302);
+	background-color: rgb(80, 62, 51);
+}
+.hotel-list-type,
+.hotel-list-cost {
+	line-height: 1.5;
+}
+.subtitle-link a {
+	font-size: 21px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+.subtitle-link a:hover {
+	color: rgb(129, 179, 210);
+}
+.subtitle-link a:active {
+	color: rgba(0, 0, 0, 0.302);
+}
+.list-rating {
+	background-color: rgb(242, 242, 242);
 }
