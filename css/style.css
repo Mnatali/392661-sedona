@@ -1,7 +1,5 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: Arial, "PT Sans", sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	color: rgb(51, 51, 51);
@@ -21,7 +19,7 @@ a {
 	border: 0;
 }
 header {
-		background-color: #ffffff;
+	background-color: #ffffff;
 }
 .navigation {
 	font-size: 14px;
@@ -32,17 +30,17 @@ header {
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
-		color: #81b3d2;
+	color: #81b3d2;
 }
 site-navigation a:active {
-		color: #000000;
-		opacity: 0.3;
+	color: #000000;
+	opacity: 0.3;
 }
 .site-item a {
-		color: #000000;
+	color: #000000;
 }
 .site-navigation-active a {
-		color: #766357;
+	color: #766357;
 }
 .advantages {
 	text-align: center;
@@ -51,12 +49,6 @@ site-navigation a:active {
 	font-size: 21px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
-}
-.advantages p {
-	font-size: 14px;
-	line-height: 26px;
-	color: rgb(0, 0, 0);
-	color: rgb(51, 51, 51);
 }
 .background-blue {
 	background-color: rgb(129, 179, 210);
@@ -73,12 +65,9 @@ site-navigation a:active {
 	color: rgb(255, 255, 255);
 }
 .advice-list {
-	list-style: none;
-}
-.advice-item {
 	text-align: center;
 }
-.advice-item h3 {
+.advice-list h3 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
@@ -87,75 +76,33 @@ site-navigation a:active {
 .background-gray {
 	background-color: rgb(238, 238, 238);
 }
-
-/*блок поиск*/
-
 .search {
 	text-align: center;
 }
-.search h2 {
+.finder h2 {
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 1.2;
 	color: rgb(0, 0, 0);
 }
-.search a {
+.open-form {
 	font-size: 21px;
 	font-weight: bold;
-	color: rgb(255, 255, 255);
-	vertical-align: middle;
-	background-color: rgb(118, 99, 87);
-	border: none;
+	color: #ffffff;
+	background-color: #766357;
+	margin-top: 35px;
+	padding-top: 31px;
+	padding-bottom: 31px;
+	padding-left: 140px;
+	padding-right: 140px;
 }
-.search a:hover {
-	background-color: rgb(96, 78, 67);
+.open-form:hover,
+.open-form:focus {
+	background-color: #604e43;
 }
-.search a:active {
-	color: rgba(255, 255, 255, 0.302);
-	background-color: rgb(80, 62, 51);
-}
-.search label {
-	line-height: 1.857;
-	font-weight: bold;
-	color: rgb(0, 0, 0);
-}
-.search-data input[type="text"] {
-	line-height: 1.857;
-	font-weight: bold;
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	background-color: rgb(242, 242, 242);
-	border: none;
-}
-.search-data input[type="text"]:hover {
-	background-color: rgb(235, 235, 235);
-}
-.search-data input[type="text"]:focus {
-	background-color: transparent;
-	border: 2px solid rgb(229, 229, 229);
-	outline: none;
-}
-.search-people input[type="text"] {
-	color: rgb(0, 0, 0);
-	line-height: 1.857;
-	font-weight: bold;
-	text-transform: uppercase;
-	background-color: rgb(242, 242, 242);
-	border: none;
-	outline: none;
-}
-.search-button {
-	font-size: 21px;
-	color: rgb(255, 255, 255);
-	font-weight: bold;
-	vertical-align: middle;
-	line-height: 1.2;
-	background-color: rgb(129, 179, 210);
-	border: none;
-	text-align: center;
-	text-transform: uppercase;
-	border: none;
-	cursor: pointer;
+.open-form:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
 }
 
 /*футер*/
@@ -163,6 +110,7 @@ site-navigation a:active {
 .footer {
 	color: rgb(255, 255, 255);
 }
+
 .footer-info {
 	color: rgb(0, 0, 0);
 	font-size: 21px;
@@ -223,6 +171,7 @@ site-navigation a:active {
 .item-hotels {
 	margin-left: 160px;
 }
+
 /* Главная. Сетки */
 
 .container {
@@ -294,7 +243,7 @@ site-navigation a:active {
 
 /*  Модальное окно */
 
-.modal-search {
+.searching-form {
 	font-weight: bold;
 }
 .searching-form {
@@ -668,7 +617,7 @@ site-navigation a:active {
 	margin-left: auto;
 }
 
-/* Карточки отелей */
+/* Карточки отелей Cетки */
 
 .hotel-list {
 	display: flex;
@@ -735,13 +684,15 @@ site-navigation a:active {
 	margin-left: auto;
 	margin-bottom: 30px;
 }
-
 footer {
 	display: flex;
 	min-height: 120px;
 	width: 1200px;
 	margin: 0 auto;
 	background-color: rgba(255, 255, 255, 0.5);
+}
+.hash-tag {
+		margin-top: 44px;
 }
 .footer-social {
 	width: 400px;
@@ -787,5 +738,3 @@ footer {
 .academy-svg-path:active {
 	fill: #bdbbbc;
 }
-
-
