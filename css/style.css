@@ -24,21 +24,23 @@ a {
 header {
 	background-color: #ffffff;
 }
-.navigation {
+/*.navigation {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
 }
+*/
 
-/*.site-navigation {
+.site-navigation {
+	list-style: none;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
-}*/
+}
 .site-navigation a:hover,
 .site-navigation a:focus {
 	color: #81b3d2;
@@ -58,7 +60,6 @@ site-navigation a:active {
 /* Хедер Сетки */
 
 header {
-	min-height: 56px;
 	position: relative;
 }
 .header-logo {
@@ -70,29 +71,27 @@ header {
 	margin-left: -70px;
 	margin: 0 auto;
 }
+.site-navigation {
+	display: flex;
+	width: 1200px;
+	min-height: 57px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
 .site-item {
 	width: 20%;
 }
-	navigation {
-	/*display: flex;*/
+	/*navigation {
+	display: flex;
 	width: 1200px;
 	min-height: 57px;
 	margin: 0 auto;
 }
+*/
 
-.site-navigation {
-	*{box-sizing: border-box}
-	display: flex;
-	flex-wrap: nowrap;
-	/*align-items: center;*/
-	/*justify-content: space-between;*/
-	justify-content: space-around;
-	list-style: none;
-	padding-left: 73px;
-	padding-right: 73px;
-	width: 1200px;
-	margin: 0 auto;
-}
+
 
 
 
